@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mayck.studyjam_tarea2.MainActivity">
+    <TextView
+        android:id="@+id/mostrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:id="@+id/linearLayout"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/cajaR"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true">
+
+
+        <Button
+            android:id="@+id/btBorrartodo"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_above="@+id/bt9"
+            android:layout_toEndOf="@+id/btparentesis"
+            android:layout_toRightOf="@+id/btparentesis"
+            android:background="#83760fdd"
+            android:onClick="limpiarTodo"
+            android:shadowRadius="@android:integer/config_shortAnimTime"
+            android:text="C"
+            android:textColor="#ff00" />
+
+        <Button
+            android:id="@+id/btparentesis"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:text="√"
+            android:background="#83760fdd"
+            android:onClick="btraiz"
+            android:layout_above="@+id/bt7"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/btcero"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/btpunto"
+            android:layout_toRightOf="@+id/btpunto"
+            android:onClick="btcero"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/btpunto"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/bt1"
+            android:onClick="btpunto"
+            android:text="." />
+
+        <Button
+            android:id="@+id/btigual"
+            android:layout_width="150dp"
+            android:layout_height="85dp"
+            android:onClick="igual"
+            android:text="="
+            android:background="#830d1ed9"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/btcero"
+            android:layout_alignRight="@+id/btmultiplicacion"
+            android:layout_alignEnd="@+id/btmultiplicacion" />
+
+        <Button
+            android:id="@+id/btdividir"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:onClick="dividir"
+            android:text="/"
+            android:background="#830cdf4b"
+            android:layout_above="@+id/btmultiplicacion"
+            android:layout_alignLeft="@+id/btrestar"
+            android:layout_alignStart="@+id/btrestar" />
+
+        <Button
+            android:id="@+id/bt1"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:text="1"
+            android:onClick="bt1"
+            android:layout_below="@+id/bt4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/btrestar"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:text="-"
+            android:background="#830cdf4b"
+            android:onClick="restar"
+            android:layout_above="@+id/btdividir"
+            android:layout_alignLeft="@+id/btsumar"
+            android:layout_alignStart="@+id/btsumar" />
+
+        <Button
+            android:id="@+id/btmultiplicacion"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:background="#830cdf4b"
+            android:text="*"
+            android:onClick="multiplicar"
+            android:layout_above="@+id/btigual"
+            android:layout_alignLeft="@+id/btdividir"
+            android:layout_alignStart="@+id/btdividir" />
+
+        <Button
+            android:id="@+id/bt3"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:text="3"
+            android:onClick="bt3"
+            android:layout_below="@+id/btdividir"
+            android:layout_toRightOf="@+id/bt2"
+            android:layout_toEndOf="@+id/bt2" />
+
+        <Button
+            android:id="@+id/bt2"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_above="@+id/btcero"
+            android:layout_toEndOf="@+id/btpunto"
+            android:layout_toRightOf="@+id/btpunto"
+            android:onClick="bt2"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/bt6"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_below="@+id/bt9"
+            android:layout_toEndOf="@+id/bt2"
+            android:onClick="bt6"
+            android:layout_toRightOf="@+id/bt2"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/bt5"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:text="5"
+            android:onClick="bt5"
+            android:layout_above="@+id/bt2"
+            android:layout_toRightOf="@+id/bt1"
+            android:layout_toEndOf="@+id/bt1" />
+
+        <Button
+            android:id="@+id/bt4"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:onClick="bt4"
+            android:layout_below="@+id/bt8"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/bt9"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:text="9"
+            android:onClick="bt9"
+            android:layout_above="@+id/bt5"
+            android:layout_toRightOf="@+id/bt5"
+            android:layout_toEndOf="@+id/bt5" />
+
+        <Button
+            android:id="@+id/btsumar"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:background="#830cdf4b"
+            android:text="+"
+            android:onClick="sumar"
+            android:layout_marginRight="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_above="@+id/btrestar"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:id="@+id/bt8"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:text="8"
+            android:onClick="bt8"
+            android:layout_below="@+id/btBorrartodo"
+            android:layout_toRightOf="@+id/btparentesis"
+            android:layout_toEndOf="@+id/btparentesis" />
+
+        <Button
+            android:id="@+id/bt7"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:onClick="bt7"
+            android:layout_above="@+id/bt5"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/btborrar"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_above="@+id/bt9"
+            android:layout_toEndOf="@+id/btBorrartodo"
+            android:layout_toRightOf="@+id/btBorrartodo"
+            android:background="#83760fdd"
+            android:onClick="borrarNumero"
+            android:text="DEL"
+            android:textColor="#ff00" />
+
+
+        >
+    </RelativeLayout>
+</RelativeLayout>
